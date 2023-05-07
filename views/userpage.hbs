@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Carlascio Assingment 1 Bank Page</title>
+    <style>
+
+body {
+    background-color: darkolivegreen;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+form.login {
+    border: 0px solid black;
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+article.container {
+    background-color: dimgray;
+    border: 10px solid black;
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input#user {
+}
+
+button {
+    width: 100px;
+}
+
+button.second{
+    opacity : 0;
+    margin-left: 900px;
+    transition-duration: 5s
+}
+h3 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    transition-duration: 5s;
+}
+h3.first{
+  
+}
+h4.second{
+
+}
+h3:hover + button.second{
+ opacity: 1;
+}
+    </style>
+    <script>
+    </script>
+</head>
+<body>
+    <form>
+        <article>
+            <h1>Online<br /></h1><h1>Banking<br /></h1><h1>System</h1>
+            <hr />
+        </article>
+        <h3 class = "first">{{data.user}}</h3>
+        <button class = "second" onclick = "reload">Logout</button></div>
+        <hr />
+        <nav>
+            <img src="tinydino.jpg" alt="logo" width="75" height="75">
+            <h2>Menu</h2>
+            <br />
+            <input id = "accountNo" maxlength="10" placeholder="Account Number" />
+            <br />
+            <input id="balance" name="options" type="radio" value="balance" onclick="fSelect()"/>
+            <label for="balance">Balance</label>
+            <br />
+            <input id="deposit" name="options" type="radio" value="deposit" onclick="fSelect()"/>
+            <label for="deposit">Deposit</label>
+            <br />
+            <button class="bSubmit" type="submit">Submit</button>
+        </nav>
+
+
+    </form>
+</body>
+</html>
